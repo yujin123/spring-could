@@ -1,7 +1,7 @@
 package com.yujin;
 
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cloud.config.server.EnableConfigServer;
 
 /**
@@ -20,6 +20,6 @@ public class Applciation {
      * @param args
      */
     public static void main(String[] args) {
-        new SpringApplicationBuilder(Applciation.class).web(true).run(args);
+        SpringApplication.run(Applciation.class, args);
     }
 }
